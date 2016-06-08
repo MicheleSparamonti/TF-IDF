@@ -8,12 +8,7 @@ import java.util.Map;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
  
-/**
- * WordsInCorpusTFIDFReducer calculates the number of documents in corpus that a given key occurs and the TF-IDF computation.
- * The total number of D is acquired from the job name<img width="16" height="16" class="wp-smiley emoji" draggable="false" alt=":)" src="https://s1.wp.com/wp-content/mu-plugins/wpcom-smileys/simple-smile.svg" style="height: 1em; max-height: 1em;"> It is a dirty hack, but the only way I could communicate the number from
- * the driver.
- * @author Marcello de Sales (marcello.desales@gmail.com)
- */
+
 public class WordsInCorpusTFIDFReducer extends Reducer<Text, Text, Text, Text> {
  
     private static final DecimalFormat DF = new DecimalFormat("###.########");
