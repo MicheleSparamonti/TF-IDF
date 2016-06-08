@@ -14,17 +14,6 @@ public class WordFrequenceInDocReducer extends Reducer<Text, IntWritable, Text, 
     public WordFrequenceInDocReducer() {
     }
  
-    /**
-     * @param key is the key of the mapper
-     * @param values are all the values aggregated during the mapping phase
-     * @param context contains the context of the job run
-     *
-     *      PRE-CONDITION: receive a list of <"word@filename",[1, 1, 1, ...]> pairs
-     *        <"marcello@a.txt", [1, 1]>
-     *
-     *      POST-CONDITION: emit the output a single key-value where the sum of the occurrences.
-     *        <"marcello@a.txt", 2>
-     */
     protected void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
  
         int sum = 0;
