@@ -12,12 +12,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
  
-/**
- * WordFrequenceInDocument Creates the index of the words in documents,
- * mapping each of them to their frequency.
- * @author Marcello de Sales (marcello.desales@gmail.com)
- * @version "Hadoop 0.20.1"
- */
+
 public class WordsInCorpusTFIDF extends Configured implements Tool {
  
     // where to put the data in hdfs when we're done
