@@ -11,12 +11,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 
-/**
-* WordCountsInDocuments counts the total number of words in each document and
-* produces data with the relative and total number of words for each document.
-* Hadoop 0.20.1 API
-* @author Marcello de Sales (marcello.desales@gmail.com)
-*/
+
 public class WordCountsInDocuments extends Configured implements Tool {
 
    // where to put the data in hdfs when we're done
