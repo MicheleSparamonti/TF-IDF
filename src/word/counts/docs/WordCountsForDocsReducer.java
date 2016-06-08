@@ -7,11 +7,7 @@ import java.util.Map;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
  
-/**
- * WordCountsForDocsReducer counts the number of documents in the
- * Hadoop 0.20.1 API
- * @author Marcello de Sales (marcello.desales@gmail.com)
- */
+
 public class WordCountsForDocsReducer extends Reducer<Text, Text, Text, Text> {
  
     public WordCountsForDocsReducer() {
