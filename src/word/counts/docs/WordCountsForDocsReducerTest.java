@@ -15,11 +15,7 @@ import org.apache.hadoop.mrunit.types.Pair;
 import org.junit.Before;
 import org.junit.Test;
  
-/**
- * Test cases for the reducer of the word counts.
- * Hadoop 0.20.1 API
- * @author Marcello de Sales (marcello.desales@gmail.com)
- */
+
 public class WordCountsForDocsReducerTest extends TestCase {
  
     private Reducer<Text, Text, Text, Text> reducer;
