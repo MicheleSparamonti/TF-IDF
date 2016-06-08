@@ -6,11 +6,7 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
  
-/**
- * LineIndexMapper Maps each observed word in a line to a (filename@offset) string.
- * Hadoop 0.20.1 API
- * @author Marcello de Sales (marcello.desales@gmail.com)
- */
+
 public class WordCountsForDocsMapper extends Mapper<LongWritable, Text, Text, Text> {
  
     public WordCountsForDocsMapper() {
