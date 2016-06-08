@@ -16,11 +16,7 @@ import org.apache.hadoop.mrunit.types.Pair;
 import org.junit.Before;
 import org.junit.Test;
  
-/**
- * Test cases for the word count mapper.
- * Hadoop 0.20.1 API
- * @author Marcello de Sales (marcello.desales@gmail.com)
- */
+
 public class WordCountsForDocsMapperTest extends TestCase {
  
     private Mapper<LongWritable, Text, Text, Text> mapper;
