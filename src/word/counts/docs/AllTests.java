@@ -5,11 +5,7 @@ import junit.framework.TestSuite;
 import word.frequency.doc.WordFreqMapperTest;
 import word.frequency.doc.WordFreqReducerTest;
  
-/**
- * All tests for the TF-IDF algorithm
- * Hadoop 0.20.1 API
- * @author Marcello de Sales (marcello.desales@gmail.com)
- */
+
 public final class AllTests  {
  
   private AllTests() { }
